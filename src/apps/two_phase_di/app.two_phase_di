@@ -1,0 +1,11 @@
+# Physics switches
+TWOD                    ?= 0
+CONSTANT_COEFFS_POISSON ?= 1
+TWO_PHASE               ?= 1
+USE_DI                  ?= 1
+NAVIER_STOKES           ?= 1
+HEAT_TRANSFER           ?= 0
+DO_POSTPROC             ?= 0
+TURB_FORCING            ?= 0
+
+MAIN_SRC=main__two_phase_di.f90
