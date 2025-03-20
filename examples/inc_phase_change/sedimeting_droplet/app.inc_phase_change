@@ -1,0 +1,18 @@
+#Physics switches
+#### Do not use ACDI with SCALAR_TRANS or CONTACT_LINE
+#### Use Phase-change always with SCALAR_TRANS 
+#### For isothermal phase-change: switch-off HEAT-TRANS 
+TWOD                    ?= 1
+CONSTANT_COEFFS_POISSON ?= 1
+TWO_PHASE               ?= 1
+USE_ACDI                ?= 0
+HEAT_TRANSFER           ?= 1
+NAVIER_STOKES           ?= 1
+SCALAR_TRANS            ?= 1
+PHASE_CHANGE            ?= 1
+USE_MAR                 ?= 0
+CONTACT_LINE            ?= 0
+DO_POSTPROC             ?= 0
+TURB_FORCING            ?= 0
+
+MAIN_SRC=main__inc_phase_change.f90
