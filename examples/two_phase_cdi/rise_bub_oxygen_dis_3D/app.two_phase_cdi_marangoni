@@ -1,0 +1,13 @@
+#Physics switches
+#### do not use ACDI with SCALAR_TRANS or CONTACT_LINE
+TWOD                    ?= 0
+CONSTANT_COEFFS_POISSON ?= 1
+TWO_PHASE               ?= 1
+USE_ACDI                ?= 0
+NAVIER_STOKES           ?= 1
+SCALAR_TRANS            ?= 1
+CONTACT_LINE            ?= 0
+DO_POSTPROC             ?= 0
+TURB_FORCING            ?= 0
+
+MAIN_SRC=main__two_phase_cdi_marangoni.f90
